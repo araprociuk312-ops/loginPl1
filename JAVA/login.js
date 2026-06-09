@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Cuentas de Prueba ---
     const mockAccounts = [
-        { email: 'admin@demo.com', password: 'Admin123*' },
-        { email: 'usuario@demo.com', password: 'Usuario123*' }
+        { email: 'admin@yahoo.com', password: 'Admin123*' },
+        { email: 'usuario@hotmail.com', password: 'Usuario123*' }
     ];
 
     // ==========================================================================
