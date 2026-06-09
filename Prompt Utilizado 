@@ -1,0 +1,172 @@
+Desarrolla una página web moderna de inicio de sesión utilizando exclusivamente HTML5, CSS3 y JavaScript puro (Vanilla JS), separando el proyecto en tres archivos:
+
+- index.html
+- styles.css
+- login.js
+
+No utilizar frameworks, librerías externas ni dependencias de terceros.
+
+Objetivo
+
+Crear una interfaz de inicio de sesión profesional, limpia, moderna y totalmente responsive para escritorio, tablet y dispositivos móviles.
+
+Además del funcionamiento visual, el código debe estar diseñado siguiendo buenas prácticas de desarrollo de software:
+
+DRY (Don't Repeat Yourself)
+
+- Evitar duplicación de código.
+- Reutilizar funciones y estilos cuando sea posible.
+- Centralizar validaciones y mensajes.
+
+ETC (Easier To Change)
+
+- El código debe ser fácil de modificar y mantener.
+- Utilizar constantes y estructuras reutilizables.
+- Evitar valores hardcodeados innecesarios.
+
+Ortogonalidad (Orthogonality)
+
+- Mantener separadas las responsabilidades:
+  - HTML para estructura.
+  - CSS para presentación.
+  - JavaScript para comportamiento.
+- Cada función debe tener una única responsabilidad.
+- Bajo acoplamiento entre componentes.
+
+WCAG (Accesibilidad)
+
+- Uso correcto de etiquetas HTML semánticas.
+- Contraste adecuado entre colores.
+- Compatibilidad con navegación por teclado.
+- Etiquetas asociadas correctamente a los inputs.
+- Uso de atributos aria cuando corresponda.
+- Indicadores visuales claros para focus.
+- Mensajes accesibles para errores y éxito.
+
+---
+
+Diseño
+
+- Estilo moderno y profesional.
+- Inspirado en interfaces SaaS actuales.
+- Tarjeta centrada en pantalla.
+- Sombras suaves.
+- Bordes redondeados.
+- Transiciones y animaciones fluidas.
+- Experiencia visual premium.
+
+---
+
+Formulario
+
+Debe contener:
+
+Campo Correo Electrónico
+
+- Obligatorio.
+- Validar que no esté vacío.
+- Validar que contenga "@"
+- Validar formato mediante Regex.
+
+Campo Contraseña
+
+- Obligatorio.
+- Mínimo 8 caracteres.
+
+Botón Mostrar/Ocultar Contraseña
+
+- Permitir alternar entre texto visible y oculto.
+- Actualizar icono o texto dinámicamente.
+
+Botón Iniciar Sesión
+
+- Hover moderno.
+- Efectos suaves.
+- Estado activo.
+
+---
+
+Validaciones
+
+Todas las validaciones deben realizarse sin recargar la página.
+
+Mostrar mensajes visuales claros:
+
+Error de correo
+
+- Campo vacío.
+- Formato inválido.
+
+Error de contraseña
+
+- Campo vacío.
+- Menos de 8 caracteres.
+
+Error de autenticación
+
+Mostrar:
+
+"Correo o contraseña incorrectos"
+
+Éxito
+
+Mostrar:
+
+"Inicio de sesión exitoso"
+
+---
+
+Cuentas de Prueba
+
+Utilizar autenticación simulada del lado del cliente.
+
+Cuenta 1:
+Correo: admin@demo.com
+Contraseña: Admin123*
+
+Cuenta 2:
+Correo: usuario@demo.com
+Contraseña: Usuario123*
+
+Si las credenciales coinciden exactamente con alguna de las cuentas anteriores, permitir el inicio de sesión.
+
+---
+
+Modo Oscuro
+
+Agregar un interruptor (toggle) para:
+
+- Activar modo oscuro.
+- Desactivar modo oscuro.
+
+Requisitos:
+
+- Utilizar variables CSS.
+- Guardar la preferencia en LocalStorage.
+- Recuperar la preferencia al cargar la página.
+- Aplicar transición suave entre temas.
+
+---
+
+Responsive Design
+
+La interfaz debe adaptarse correctamente a:
+
+- Monitores grandes.
+- Laptops.
+- Tablets.
+- Teléfonos móviles.
+
+Utilizar Flexbox y/o CSS Grid.
+
+---
+
+Animaciones
+
+Agregar animaciones suaves para:
+
+- Inputs al recibir foco.
+- Botones al pasar el cursor.
+- Mensajes de error y éxito.
+- Cambio entre modo claro y oscuro.
+- Aparición inicial de la tarjeta de login.
